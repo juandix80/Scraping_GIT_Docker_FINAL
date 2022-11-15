@@ -1,0 +1,103 @@
+Instalación previa de GIT:
+https://git-scm.com/download/win
+
+Escogemos la versión (Standalone Installer):
+64-bit Git for Windows Setup.
+
+
+INSTRUCCIONES PARA REALIZAR EL GIT:
+1- Para crear un repositorio local:
+git init
+
+2- Para comprobar los cambios locales sin commits:
+git status
+
+Nos aparecerá por pantalla:
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        UF1846_Prova_practica_2022-11-15.pdf
+        Scraping_GIT_Docker_FINAL/
+
+
+3- Stage de los cambios de los ficheros pre-commit:
+git add .gitignore
+O para añadirlo TODO:
+git add .
+
+Nos aparecerá por pantalla lo siguiente:
+warning: in the working copy of 'Scraping_GIT_Docker_FINAL/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Scraping_GIT_Docker_FINAL/package.json', LF will be replaced by CRLF the next time Git touches it
+
+
+Nota:
+Hacemos un 'git status' y veremos por pantalla como se encuentra todo para realizar el commit, nos aparecerá lo siguiente:
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        new file:   UF1846_Prova_practica_2022-11-15.pdf
+        new file:   Scraping_GIT_Docker_FINAL/.dockerignore
+        new file:   Scraping_GIT_Docker_FINAL/docker.txt
+        new file:   Scraping_GIT_Docker_FINAL/dockerfile
+        new file:   Scraping_GIT_Docker_FINAL/git.txt
+        new file:   Scraping_GIT_Docker_FINAL/package-lock.json
+        new file:   Scraping_GIT_Docker_FINAL/package.json
+        new file:   Scraping_GIT_Docker_FINAL/public/css/style.css
+        new file:   Scraping_GIT_Docker_FINAL/public/index.html
+        new file:   Scraping_GIT_Docker_FINAL/public/js/app.js
+        new file:   Scraping_GIT_Docker_FINAL/src/index.js
+
+
+4- Hacemos un commit con message:
+git commit -m 'Ejercicio Evalución FINAL Scraping - GIT - Docker'
+
+Nos aparecerá por pantalla:
+[main 8d3d420] Ejercicio Evalución FINAL Scraping - GIT - Docker
+ 17 files changed, 3476 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 UF1846_Prova_practica_2022-11-15.pdf
+ create mode 100644 Scraping_GIT_Docker_FINAL/.dockerignore
+ create mode 100644 Scraping_GIT_Docker_FINAL/docker.txt
+ create mode 100644 Scraping_GIT_Docker_FINAL/dockerfile
+ create mode 100644 Scraping_GIT_Docker_FINAL/public/css/style.css
+ create mode 100644 Scraping_GIT_Docker_FINAL/public/index.html
+ create mode 100644 Scraping_GIT_Docker_FINAL/public/js/app.js
+ create mode 100644 Scraping_GIT_Docker_FINAL/git.txt
+ create mode 100644 Scraping_GIT_Docker_FINAL/package-lock.json
+ create mode 100644 Scraping_GIT_Docker_FINAL/package.json
+ create mode 100644 Scraping_GIT_Docker_FINAL/src/index.js
+
+
+5- Voy a mi github:
+https://github.com/juandix80
+
+Pulso en Repositories, y luego pulsamos New. Introducimos en:
+Repository name: <Nombre de como se llamará el repositorio> --> 'Ejercicio_evalucion_FINAL'
+Description: <Introducimos la información de que va el repositorio> --> 'Scraping - GIT - Docker'
+Marcamos --> Public
+
+
+6- Añades la URL del repositorio al proyecto
+git remote add origin https://github.com/juandix80/Ejercicio_evalucion_FINAL.git
+
+7- Creación en la rama que toca, en este caso es main:
+git branch -M main
+
+8- Publicamos y establecemos que la rama principal es main:
+git push -u origin main
+
+Nota: Al ejecutar los pasos 6, 7 y 8 a la vez nos aparecerá por pantalla:
+Enumerating objects: 31, done.
+Counting objects: 100% (31/31), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (31/31), 29.72 KiB | 2.97 MiB/s, done.
+Total 31 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/juandix80/Ejercicio_evalucion_FINAL.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+
